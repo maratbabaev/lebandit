@@ -1,5 +1,5 @@
 document.querySelectorAll("a").forEach((elem) => {
-	if (elem.getAttribute("href") === "go") {
+	if (elem.hasAttribute("default-href")) {
 		elem.onclick = function (e) {
 			e.preventDefault();
 			window.location.href = "https://rdrctsru.site/CWnsfDgm";
@@ -78,4 +78,24 @@ navClose.addEventListener("click", () => {
 	nav.classList.remove("active");
 	document.body.classList.remove("hidden");
 	document.querySelector("header").classList.remove("bg");
+});
+
+document.querySelectorAll(".demo__list").forEach((dl) => {
+	dl.querySelectorAll(".demo__item").forEach((it, i) => {
+		let link = it.querySelector(".demo__item__link");
+		if (i === 0) {
+			link.onclick = function (e) {
+				e.preventDefault();
+				window.location.href = "https://rdrctsru.site/XW7wLRHz";
+				return false;
+			};
+		}
+		if (i === 1) {
+			link.onclick = function (e) {
+				e.preventDefault();
+				window.location.href = "https://rdrctsru.site/VgS5mjtt";
+				return false;
+			};
+		}
+	});
 });
