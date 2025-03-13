@@ -149,11 +149,6 @@ header .container {
   flex-direction: column;
   gap: 24px;
 }
-.top__content h1 {
-  font-weight: bold;
-  font-size: 28px;
-  color: #fff;
-}
 
 .top__btns {
   display: flex;
@@ -234,36 +229,60 @@ header .container {
 .text-block {
   margin-top: 40px;
 }
+.text-block.content h1 {
+  font-size: 40px;
+}
+.text-block.content h2 {
+  font-size: 30px;
+}
+.text-block.content h3 {
+  font-size: 20px;
+}
 .text-block:first-child {
   margin-top: 0;
 }
+.text-block h1,
 .text-block h2 {
   font-weight: bold;
   color: #fff;
   font-size: 28px;
 }
-.text-block p {
+.text-block h3 {
+  font-weight: bold;
+  color: #fff;
+  font-size: 20px;
+}
+.text-block p,
+.text-block .table,
+.text-block ul,
+.text-block ol,
+.text-block h2,
+.text-block h3,
+.text-block h1 {
   margin-top: 24px;
 }
-.text-block p:first-child {
-  margin-top: 0;
-}
-.text-block .table {
-  margin-top: 24px;
-}
-.text-block .table:first-child {
+.text-block p:first-child,
+.text-block .table:first-child,
+.text-block ul:first-child,
+.text-block ol:first-child,
+.text-block h2:first-child,
+.text-block h3:first-child,
+.text-block h1:first-child {
   margin-top: 0;
 }
 .text-block ul {
-  margin-top: 24px;
   display: flex;
   flex-direction: column;
   gap: 15px;
   padding-left: 50px;
   list-style: disc;
 }
-.text-block ul:first-child {
-  margin-top: 0;
+.text-block ol {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding-left: 50px;
+  list-style: auto;
 }
 
 .table table {
@@ -466,7 +485,8 @@ footer {
   .mech__img img {
     width: 400px;
   }
-  .text-block ul {
+  .text-block ul,
+  .text-block ol {
     padding-left: 30px;
   }
 }
@@ -567,9 +587,6 @@ footer {
   .section {
     padding: 20px 0;
   }
-  .top__content h1 {
-    font-size: 18px;
-  }
   .top__img img {
     width: 100%;
   }
@@ -610,7 +627,20 @@ footer {
   .demo__item__img {
     width: 128px;
   }
+  .text-block h1,
   .text-block h2 {
+    font-size: 18px;
+  }
+  .text-block h3 {
+    font-size: 16px;
+  }
+  .text-block.content h1 {
+    font-size: 30px;
+  }
+  .text-block.content h2 {
+    font-size: 24px;
+  }
+  .text-block.content h3 {
     font-size: 18px;
   }
   .table table td {
