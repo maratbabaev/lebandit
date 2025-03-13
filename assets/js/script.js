@@ -83,19 +83,17 @@ navClose.addEventListener("click", () => {
 document.querySelectorAll(".demo__list").forEach((dl) => {
 	dl.querySelectorAll(".demo__item").forEach((it, i) => {
 		let link = it.querySelector(".demo__item__link");
-		if (i === 0) {
-			link.onclick = function (e) {
-				e.preventDefault();
-				window.location.href = "https://rdrctsru.site/XW7wLRHz";
-				return false;
-			};
-		}
-		if (i === 1) {
-			link.onclick = function (e) {
-				e.preventDefault();
-				window.location.href = "https://rdrctsru.site/VgS5mjtt";
-				return false;
-			};
-		}
+		link.onclick = function (e) {
+			e.preventDefault();
+			linkHref = "https://rdrctsru.site/XW7wLRHz";
+			if (i === 1) {
+				linkHref = "https://rdrctsru.site/VgS5mjtt";
+			}
+			if (i === 2) {
+				linkHref = "https://rdrctsru.site/vgyMwQ26";
+			}
+			window.location.href = linkHref;
+			return false;
+		};
 	});
 });
